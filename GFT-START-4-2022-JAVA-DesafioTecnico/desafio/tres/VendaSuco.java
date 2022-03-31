@@ -16,7 +16,8 @@ public class VendaSuco {
 			int litro = sc.nextInt();
 			System.out.print("Informe o valor do Suco: ");
 			double valor = sc.nextDouble();
-			if(litro >= 2 && litro < 5) {
+			//Se é em até 2 Litros o enunciado não fala se é no intervalo de de acima de 2 a 5 se tem desconto
+			if(litro <= 2) {
 				double soma = (valor * litro) - ((valor * litro) * (3/100f));
 				System.out.printf("Valor a pagar: R$ %.2f%n",soma);				
 			}else if (litro >=5) {
@@ -31,7 +32,8 @@ public class VendaSuco {
 			int litro = sc.nextInt();
 			System.out.print("Informe o valor do Suco: ");
 			double valor = sc.nextDouble();
-			if(litro >= 2 && litro < 5) {
+			// O Problema diz Até 2 litros  e depois de 5 então há um intervalo
+			if(litro <= 2) {
 				double soma = (valor * litro) - ((valor * litro) * (4/100f));
 				System.out.printf("Valor a pagar: R$ %.2f%n",soma);				
 			}else if (litro >=5) {

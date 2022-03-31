@@ -1,14 +1,11 @@
 package desafio.um.entities;
 
-import java.time.LocalDate;
-import java.time.Period;
 import java.util.Date;
 
 public class Pessoa {
 	private String nome;
 	private Date dataDeNascimento;
 	private Double altura;
-	private Date calcular;
 	
 	public Pessoa() {
 		
@@ -45,19 +42,6 @@ public class Pessoa {
 		this.altura = altura;
 	}
 
-	public Date getCalcular() {
-		return calcular;
-	}
-
-	public void setCalcular(Date calcular) {
-		this.calcular = calcular;
-	}
-
-	public static int calculoIdade(LocalDate dataDeNascimento) {
-	    LocalDate dataAtual = LocalDate.now();
-	    Period periodo = Period.between(dataDeNascimento, dataAtual);
-	    return periodo.getYears();
-	}
 	
 	@Override
 	public String toString() {
