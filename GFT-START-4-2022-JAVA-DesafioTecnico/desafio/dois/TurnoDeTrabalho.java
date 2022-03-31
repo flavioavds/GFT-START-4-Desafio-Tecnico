@@ -1,5 +1,16 @@
 package desafio.dois;
 
+/*
+. Faça um programa que pergunte em que turno você Trabalha.
+Peça para digitar: (vale 3 pontos)
+M-matutino
+V-vespertino
+N-noturno.
+Imprima a mensagem “Bom dia!” ou “Boa Tarde” ou “Boa Noite” ou “Valor
+inválido”, conforme o caso.
+
+*/
+
 import java.util.Scanner;
 
 public class TurnoDeTrabalho {
@@ -10,6 +21,7 @@ public class TurnoDeTrabalho {
 		
 		System.out.print("Por Favor digite o seu turno: ");
 		
+		//Minha entrada e fiz colocando o codigo do Caracteres para mesmo se a pessoa digitar minusculo tornar maiuscula
 		char turno = sc.next().toUpperCase().charAt(0);
 		
 		if(turno == 'M') {

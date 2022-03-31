@@ -1,5 +1,10 @@
 package desafio.quatro;
 
+/*
+ A idade permitida para doar sangue é entre 18 e 67 anos. Faça um
+aplicativo que pergunte a idade de uma pessoa e diga se ela pode doar
+sangue ou não. Use alguns dos operadores lógicos OU (||) e E (&&). 
+ */
 import java.util.Scanner;
 
 public class DoarSangue {
@@ -8,10 +13,11 @@ public class DoarSangue {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		
+		//Codigo Simples com a Idade se pode doar sangue ou não
 		System.out.print("Por Favor informe sua idade: ");
 		int idade = sc.nextInt();
 		
-		
+		//Minha condição foi conforme o Anunciado, fazendo as duas condiçãos que tem propriedades diferente de EE e OU
 		if (idade >= 18 && idade <= 67) {
 			System.out.println("Você é Doador de Sangue pode Doar Sangue");
 		}else if (idade < 18 || idade > 67) {
